@@ -31,7 +31,7 @@ def get_data():  # Load the training/testing data
 
     # Now we convert them to tensors
     X_tensor = torch.tensor(X.values, dtype=torch.float32)
-    y_tensor = torch.tensor(y.values, dtype=torch.float32)  # <----------------------- y value from above??
+    # y_tensor = torch.tensor(y.values, dtype=torch.float32)  # <----------------------- 
 
     test_ds = TensorDataset(X_tensor, y_tensor)
 
